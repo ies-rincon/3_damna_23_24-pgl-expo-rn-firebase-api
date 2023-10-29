@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "_id": "A1GeqYXJ9kpMUPoqS861",
+      "name": "John Doe",
+      "email": "johndoe@mail.com",
+      "img": "https://fakeperson-face.oss-us-west-1.aliyuncs.com/Face/male/male1085425647369.jpg"
+    },
+    {
+      "_id": "O55q5LiWIa697JdiJt67",
+      "name": "Jane Smith",
+      "email": "janesmith@mail.com",
+      "img": "https://fakeperson-face.oss-us-west-1.aliyuncs.com/Face/male/male20161085952333985.jpg"
+    },
+    {
+      "_id": "lSPeboRoUC5F0kuWfwUg",
+      "name": "Mary Wilson",
+      "email": "marywilson@mail.com",
+      "img": "https://fakeperson-face.oss-us-west-1.aliyuncs.com/Face/female/female20171026117727691.jpg"
+    }
+  ]
+}

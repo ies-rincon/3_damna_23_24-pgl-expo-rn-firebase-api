@@ -1,20 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import ListaDeUsuarios from "./ListaDeususarios";
+import DetallesUsuario from "./DetallesUsuario";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+export type RootStackParamList = {
+  Usuarios: undefined;
+  Usuario: { user: { [key: string]: string } };
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Stack = createNativeStackNavigator<RootStackParamList>();
+export default () => (
+  <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Usuarios" component={ListaDeUsuarios} />
+      <Stack.Screen name="Usuario" component={DetallesUsuario} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
